@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: auto;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+#logo{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+#admn{
+    padding: 10px;
+    margin: 5px 0;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#profile-card {
+    display: none;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.logout-btn {
+    background: red;
+}
+
+.logout-btn:hover {
+    background: darkred;
+}
+
+#update-section {
+    margin-top: 20px;
+    padding: 10px;
+    background: #e6f7ff;
+    border-radius: 5px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Foundation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Friendship Foundation</h1>
+        <img id="logo" src="img/logo.jpg" alt="">
+
+        <!-- Addmin Login system here -->
+        <div id="loginSection">
+            <h3 id="admn">🔐 Addmin Panel</h3>
+            <input type="password" id="adminPassword" placeholder="Enter Password">
+            <button onclick="checkLogin()">Login</button>
+        </div>
+
+        <!-- Logout Button here -->
+        <div id="logoutSection" style="display: none;">
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+
+        <!-- Member Search here -->
+        <div id="search-section">
+            <h3 id="admn">Search Here Member</h3>
+            <input type="text" id="searchBox" placeholder="Enter Your Name or Phone">
+            <button onclick="searchMember()">🔍 Search</button>
+        </div>
+
+        <!-- Member Profile here -->
+        <div id="profile-card" style="display: none;">
+            <img id="memberImage" src="img/small (2).jpg" alt="Member Image">
+            <h2 id="memberName">Masud rana</h2>
+            <p><strong>📞 Phone: </strong> <span id="memberPhone"></span></p>
+            <p><strong>💰 Total Deposit:</strong> <span id="totalDeposit"></span> Tk</p>
+            <p><strong>📌 Due Amount:</strong> <span id="dueAmount"></span> Tk</p>
+        </div>
+
+        <!-- Update Fund (Only for Addmin) -->
+        <div id="update-section" style="display: none;">
+            <h3>Update Fund Amount</h3>
+            <input type="number" id="amountInput" placeholder="Enter Amount">
+
+            <label><input type="radio" name="operation" value="add" checked> Deposit (+)</label>
+            <label><input type="radio" name="operation" value="subtract"> Withdraw (-)</label>
+
+            <button onclick="updateDeposit()">Update</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
